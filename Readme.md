@@ -1,4 +1,4 @@
-# **Real-time Object Detection with YOLOv8 and YOLOv9 on NDI Live Stream**
+# **Real-time Object Detection in Fpv Drone with YOLOv8 and YOLOv9 on NDI Live Stream**
 
 ## Prerequisites
 - DJI Goggles 2
