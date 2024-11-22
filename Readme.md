@@ -1,37 +1,122 @@
-# **Real-time Object Detection in Fpv Drone with YOLOv8 and YOLOv9 on NDI Live Stream**
+---
 
-## Prerequisites
-- DJI Goggles 2
-- Cosmostreamer box for DJI G2 (Raspberry Pi 4B)
+# **Real-time Object Detection in FPV Drone with YOLOv8 and YOLOv9 on NDI Live Stream**
 
-## Introduction
-This project enables real-time object detection using YOLOv8 and YOLOv9 models on an NDI live stream from DJI Goggles 2. The NDI live stream is captured using the `ndi-python` library, allowing seamless integration with Python for further processing.
+This project demonstrates how to enable real-time object detection on an FPV drone using YOLOv8 and YOLOv9 models, leveraging the NDI live stream from DJI Goggles 2 for seamless processing.
 
-## Setup Instructions
-### Install Cosmoviewer
-Download Cosmoviewer and set it up by adjusting the display settings to 1080p 30fps and enabling NDI/HX video stream. Ensure UDP is turned off for optimal performance. Refer to the setup tutorial provided by Cosmostreamer for detailed instructions.
+---
 
-### Ethernet Configuration
-Configure the Ethernet IP and subnet mask settings in Cosmoviewer to establish a stable connection.
+## **Prerequisites**
+- **Hardware**:
+  - DJI Goggles 2
+  - Cosmostreamer Box (Raspberry Pi 4B)
+- **Software**:
+  - Python 3.9
+  - Miniconda3
+  - VSCode with Jupyter extension (recommended for ease of use)
 
-### Alternative Method (Optional)
-Another method involves displaying the DJI G2 feed using the DJI Fly app and mirroring it to PC using scrcpy. Note that this method may introduce occasional bandwidth loss and frame skipping.
+---
 
-## Installation
-### Install required Python packages
-```bash
-pip install ndi-python torch cv2 ultralytics numpy
+## **Introduction**
+This repository provides a step-by-step guide to setting up real-time object detection using YOLOv8 and YOLOv9. The system processes NDI live streams captured via the `ndi-python` library, enabling advanced object detection with Python.
 
-##Usage
-##Clone the repository:
-##Copy code
-git clone <repository_url>
+---
 
-##Navigate to the project directory:
-##Copy code
-cd <project_directory>
+## **Setup Instructions**
 
-##Run either yolov8.py or yolov9.py script:
-##Copy code
-python yolov8.py
-python yolov9.py
+### **Step 1: Install Prerequisites**
+1. **Install Miniconda3**: [Download Miniconda3](https://docs.conda.io/en/latest/miniconda.html) and follow the installation instructions.
+2. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/Ramkethar/Dji-G2-Yolov9.git
+   ```
+   Alternatively, download the repository as a ZIP file and extract it.
+
+3. **Create a Virtual Environment**:
+   Open a terminal (Command Prompt or PowerShell) and run:
+   ```bash
+   conda create -n djig2_env python=3.9 -y
+   conda activate djig2_env
+   ```
+
+4. **Install Required Python Packages**:
+   ```bash
+   pip install notebook jupyter
+   pip install ultralytics
+   pip install torch torchvision torchaudio
+   pip install opencv-python opencv-contrib-python
+   pip install ndi-python
+   ```
+
+---
+
+### **Step 2: Set Up VSCode for Jupyter Notebooks**
+1. **Install VSCode**: [Download Visual Studio Code](https://code.visualstudio.com/).
+2. **Install Extensions**:
+   - Open VSCode and go to the Extensions tab (on the left sidebar).
+   - Install the following extensions:
+     - **Python**
+     - **Jupyter**
+3. **Open the Notebook**:
+   - Open the `djig2_yolov10.ipynb` notebook from the repository.
+   - Ensure the Python interpreter points to the `djig2_env` Conda environment.
+
+---
+
+### **Step 3: Run the Notebook**
+Navigate to the `DJI-G2-YOLOVX/djig2_yolov10.ipynb` file and execute the cells in sequence.
+
+---
+
+### **Install Cosmoviewer**
+- Download and configure **Cosmoviewer**:
+  - Set the display to **1080p 30fps**.
+  - Enable **NDI/HX video stream**.
+  - Disable UDP for optimal performance.
+- Refer to the Cosmostreamer tutorial for detailed instructions.
+
+---
+
+### **Ethernet Configuration**
+Set up the **Ethernet IP** and **subnet mask** settings in Cosmoviewer to ensure a stable connection.
+
+---
+
+### **Alternative Method (Optional)**
+If you don’t have a Cosmostreamer box:
+1. Use the **DJI Fly app** to display the DJI G2 feed.
+2. Mirror the feed to your PC using **scrcpy**.
+   - Note: This method may result in occasional bandwidth loss and frame skipping.
+
+---
+
+## **Usage**
+
+### **Run Object Detection**
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Ramkethar/Dji-G2-Yolov9.git
+   cd Dji-G2-Yolov9
+   ```
+
+2. Run the object detection scripts:
+   ```bash
+   python yolov8.py
+   python yolov9.py
+   ```
+
+---
+
+## **Features**
+- **Real-Time Detection**: Optimized for low-latency performance.
+- **Versatile Models**: Supports YOLOv8 and YOLOv9 for accurate object detection.
+- **Easy Integration**: Use with DJI Goggles 2 and NDI streaming.
+
+---
+
+## **Credits**
+This project is created and maintained by **Ramkethar**.
+
+Feel free to share feedback or raise issues to improve the repository. 🎯
+
+---
