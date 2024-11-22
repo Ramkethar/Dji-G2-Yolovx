@@ -25,15 +25,17 @@ This repository provides a step-by-step guide to setting up real-time object det
 ## **Setup Instructions**
 
 ### **Step 1: Install Prerequisites**
-1. **Install Miniconda3**: [Download Miniconda3](https://docs.conda.io/en/latest/miniconda.html) and follow the installation instructions.
-2. **Clone the Repository**:
+1. **Install Miniconda3**:  
+   [Download Miniconda3](https://docs.conda.io/en/latest/miniconda.html) and follow the installation instructions.
+
+2. **Clone the Repository**:  
+   Open a terminal (Miniconda3 Command Prompt) and run:
    ```bash
    git clone https://github.com/Ramkethar/Dji-G2-Yolov9.git
    ```
    Alternatively, download the repository as a ZIP file and extract it.
 
 3. **Create a Virtual Environment**:
-   Open a terminal (Command Prompt or PowerShell) and run:
    ```bash
    conda create -n djig2_env python=3.9 -y
    conda activate djig2_env
@@ -51,12 +53,15 @@ This repository provides a step-by-step guide to setting up real-time object det
 ---
 
 ### **Step 2: Set Up VSCode for Jupyter Notebooks**
-1. **Install VSCode**: [Download Visual Studio Code](https://code.visualstudio.com/).
+1. **Install VSCode**:  
+   [Download Visual Studio Code](https://code.visualstudio.com/).
+
 2. **Install Extensions**:
    - Open VSCode and go to the Extensions tab (on the left sidebar).
    - Install the following extensions:
      - **Python**
      - **Jupyter**
+
 3. **Open the Notebook**:
    - Open the `djig2_yolov10.ipynb` notebook from the repository.
    - Ensure the Python interpreter points to the `djig2_env` Conda environment.
