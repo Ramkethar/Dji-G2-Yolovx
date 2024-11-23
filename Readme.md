@@ -1,8 +1,8 @@
 ---
 
-# **Real-time Object Detection in FPV Drone with YOLOv8 and YOLOv9 on NDI Live Stream**
+# **Real-time Object Detection in FPV Drone with YOLOv10 on NDI Live Stream**
 
-This project demonstrates how to enable real-time object detection on an FPV drone using YOLOv8 and YOLOv9 models, leveraging the NDI live stream from DJI Goggles 2 for seamless processing.
+This project demonstrates how to enable real-time object detection on an FPV drone using the YOLOv10 model, leveraging the NDI live stream from DJI Goggles 2 for seamless processing.
 
 ---
 
@@ -18,7 +18,7 @@ This project demonstrates how to enable real-time object detection on an FPV dro
 ---
 
 ## **Introduction**
-This repository provides a step-by-step guide to setting up real-time object detection using YOLOv8 and YOLOv9. The system processes NDI live streams captured via the `ndi-python` library, enabling advanced object detection with Python.
+This repository provides a step-by-step guide to setting up real-time object detection using YOLOv10. The system processes NDI live streams captured via the `ndi-python` library, enabling advanced object detection with Python.
 
 ---
 
@@ -31,7 +31,7 @@ This repository provides a step-by-step guide to setting up real-time object det
 2. **Clone the Repository**:  
    Open a terminal (Miniconda3 Command Prompt) and run:
    ```bash
-   git clone https://github.com/Ramkethar/Dji-G2-Yolov9.git
+   git clone https://github.com/Ramkethar/Dji-G2-Yolov10.git
    ```
    Alternatively, download the repository as a ZIP file and extract it.
 
@@ -100,21 +100,20 @@ If you don’t have a Cosmostreamer box:
 ### **Run Object Detection**
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Ramkethar/Dji-G2-Yolov9.git
-   cd Dji-G2-Yolov9
+   git clone https://github.com/Ramkethar/Dji-G2-Yolov10.git
+   cd Dji-G2-Yolov10
    ```
 
-2. Run the object detection scripts:
+2. Run the object detection script:
    ```bash
-   python yolov8.py
-   python yolov9.py
+   python yolov10.py
    ```
 
 ---
 
 ## **Features**
 - **Real-Time Detection**: Optimized for low-latency performance.
-- **Versatile Models**: Supports YOLOv8 and YOLOv9 for accurate object detection.
+- **Advanced Model**: Supports YOLOv10 for accurate object detection.
 - **Easy Integration**: Use with DJI Goggles 2 and NDI streaming.
 
 ---
@@ -125,3 +124,7 @@ This project is created and maintained by **Ramkethar**.
 Feel free to share feedback or raise issues to improve the repository. 🎯
 
 ---
+
+### **Changelog**
+- Updated all references to YOLOv10.
+- Ensured clarity and consistency for instructions.
