@@ -1,1 +1,1 @@
- Image and Yolo Model files
+ Images and GIF
