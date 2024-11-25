@@ -2,7 +2,7 @@
 
 # **Real-time Object Detection in FPV Drone with YOLOv10 on NDI Live Stream**
 
-This project demonstrates how to enable real-time object detection on an FPV drone using the YOLOv10 model, leveraging the NDI live stream from DJI Goggles 2 for seamless processing.
+This project demonstrates how to enable real-time object detection on an FPV drone using the YOLOv10 model via the NDI live stream from DJI Goggles 2 for seamless processing.
 
 ---
 
@@ -11,14 +11,16 @@ This project demonstrates how to enable real-time object detection on an FPV dro
   - DJI Goggles 2
   - Cosmostreamer Box (Raspberry Pi 4B)
 - **Software**:
-  - Python 3.9
+  - Python 3.9 + pytorch (use gpu if available-check notebook for more instructions)
   - Miniconda3
   - VSCode with Jupyter extension (recommended for ease of use)
 
 ---
 
 ## **Introduction**
-This repository provides a step-by-step guide to setting up real-time object detection using YOLOv10. The system processes NDI live streams captured via the `ndi-python` library, enabling advanced object detection with Python.
+This repository provides a step-by-step guide to setting up real-time object detection using YOLOv10. The system processes NDI live streams captured via the `ndi-python` library, enabling advanced object detection with Python.view the below image for the pipeline:
+
+![Pipeline Overview](assets/pipeline.png)
 
 ---
 
@@ -91,7 +93,7 @@ Set up the **Ethernet IP** and **subnet mask** settings in Cosmoviewer to ensure
 If you don’t have a Cosmostreamer box:
 1. Use the **DJI Fly app** to display the DJI G2 feed.
 2. Mirror the feed to your PC using **scrcpy**.
-   - Note: This method may result in occasional bandwidth loss and frame skipping.
+   - Note: This method may result in occasional bandwidth loss and frame skipping. This method is yet to be Implemented.
 
 ---
 
@@ -106,7 +108,7 @@ If you don’t have a Cosmostreamer box:
 
 2. Run the object detection script:
    ```bash
-   python yolov10.py
+   djig2yolov10.ipynb
    ```
 
 ---
