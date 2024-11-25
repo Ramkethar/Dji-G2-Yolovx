@@ -5,6 +5,7 @@
 This project demonstrates how to enable real-time object detection on an FPV drone using the YOLOv10 model via the NDI live stream from DJI Goggles 2 for seamless processing.
 
 ---
+![Real-Time Object Detection](assets/detection.gif)
 
 ## **Prerequisites**
 - **Hardware**:
