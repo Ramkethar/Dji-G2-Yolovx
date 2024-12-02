@@ -122,7 +122,7 @@ If you don’t have a Cosmostreamer box:
 ---
 
 ## **Credits**
-This project is created and maintained by **Ramkethar**.
+This project is created and maintained by **RamKethar - Karma consulting inc canada **.
 
 Feel free to share feedback or raise issues to improve the repository. 🎯
 
